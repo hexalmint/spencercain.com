@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className="w-full min-h-screen flex justify-center antialiased"
+        className="w-full min-h-screen flex flex-col items-center antialiased"
       >
         <Navbar
           brand={
