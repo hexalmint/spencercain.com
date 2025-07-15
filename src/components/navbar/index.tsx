@@ -19,8 +19,8 @@ export function Navbar({
       {/* Desktop Navbar Items */}
       <ul className="hidden sm:flex items-center justify-end gap-1">
         {items &&
-          items.map((item, index) => (
-            <li key={`navbar-${index}`}>
+          items.map((item) => (
+            <li key={item.href}>
               <NavbarItem href={item.href}>{item.element}</NavbarItem>
             </li>
           ))}
