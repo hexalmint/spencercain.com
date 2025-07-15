@@ -48,7 +48,7 @@ function NavbarMenuItem({
   return (
     <Link
       href={href}
-      onClick={onClick ?? undefined}
+      onClick={onClick}
       className="w-full flex items-center rounded-xl py-2 px-4 transition-colors duration-150 hover:bg-foreground/10 active:bg-foreground/10"
     >
       {children}
