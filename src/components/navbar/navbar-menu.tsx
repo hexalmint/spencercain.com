@@ -22,8 +22,8 @@ export function NavbarMenu({
       {open && (
         <div className="w-full fixed left-0 right-0 top-14 bottom-0 z-40 flex flex-col items-start gap-4 p-4 bg-background">
           <ul className="w-full flex flex-col gap-1">
-            {items?.map((item, index) => (
-              <li key={`navbar-menu-${index}`}>
+            {items?.map((item) => (
+              <li key={item.href}>
                 <NavbarMenuItem href={item.href} onClick={() => setOpen(false)}>
                   {item.element}
                 </NavbarMenuItem>
