@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="prose lg:prose-lg prose-invert max-w-none w-4xl">
+    <main className="prose lg:prose-lg prose-invert max-w-3xl">
       <h1>Home</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
