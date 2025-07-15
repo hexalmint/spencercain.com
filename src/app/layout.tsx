@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 
 import { Navbar } from "@/components/navbar"
-import Link from "next/link"
+import { brand, items } from "@/components/navbar/defaults"
 
 export const metadata: Metadata = {
   title: "Spencer Cain — Software Engineer",
@@ -18,19 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="w-full min-h-screen flex flex-col items-center gap-4 antialiased">
-        <Navbar
-          brand={
-            <Link href="/">
-              <span className="text-lg font-bold">Spencer Cain</span>
-            </Link>
-          }
-          items={[
-            {
-              element: <span>Home</span>,
-              href: "/",
-            },
-          ]}
-        />
+        <Navbar brand={brand} items={items} />
         <div className="w-full flex justify-center p-4">{children}</div>
       </body>
     </html>
