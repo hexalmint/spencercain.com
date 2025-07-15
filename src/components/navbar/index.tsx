@@ -14,7 +14,7 @@ export function Navbar({
 }) {
   return (
     <nav className="w-full h-14 grid grid-cols-2 sticky top-0 py-2 px-4 bg-background">
-      <div className="flex items-center px-2">{brand}</div>
+      <div className="flex items-center">{brand}</div>
 
       {/* Desktop Navbar Items */}
       <ul className="hidden sm:flex items-center justify-end gap-1">
